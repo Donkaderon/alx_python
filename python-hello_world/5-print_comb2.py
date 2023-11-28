@@ -1,7 +1,8 @@
-for i in range(10):
-    for j in range(10):
-        print("{:d}{:d}".format(i, j), end="")
-        if i != 9 or j != 9:
-            print(", ", end="")
+output = ""
+for i in range(100):
+    output += "{:02d}".format(i)
+    if i != 99:
+        output += ", "
 
-print()
+print(output)
+print()  

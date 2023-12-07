@@ -1,2 +1,2 @@
-def raise_exception_msg(message="This is a custom exception message."):
+def raise_exception_msg(message=""):
     raise Exception(message)

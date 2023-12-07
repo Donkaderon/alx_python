@@ -13,6 +13,7 @@ def print_arguments(argv):
         
         for i, arg in enumerate(argv, start=1):
             print(f"{i}: {arg}")
+    print()
       
 if __name__ == "__main__":
     print_arguments(sys.argv[1:])

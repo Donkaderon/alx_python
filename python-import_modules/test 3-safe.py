@@ -1,6 +1,7 @@
-safe_print_division = __import__('3-safe_print_division').safe_print_division
+raise_exception_msg = __import__('5-raise_exception_msg').raise_exception_msg
 
-a = 0
-b = 0
-result = safe_print_division(a, b)
-print("{:d} / {:d} = {}".format(a, b, result))
+try:
+    message = "C is fun"
+    raise_exception_msg(message)
+except NameError as ne:
+    print(ne)

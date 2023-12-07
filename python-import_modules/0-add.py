@@ -1,6 +1,6 @@
 if __name__ == "__main__":
-    a = 1
-    b = 2
+    a = 10
+    b = 30
 
     add_module = __import__('add_0')
     add_function = getattr(add_module, 'add')

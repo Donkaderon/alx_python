@@ -41,3 +41,21 @@ new_dict = update_dictionary(a_dictionary, 'city', "San Francisco")
 print_sorted_dictionary(new_dict)
 print("--")
 print_sorted_dictionary(a_dictionary)
+
+#P3 
+best_score = __import__('3-best_score').best_score
+
+a_dictionary = {'John': 12, 'Bob': 14, 'Mike': 14, 'Molly': 16, 'Adam': 10}
+best_key = best_score(a_dictionary)
+print("Best score: {}".format(best_key))
+
+best_key = best_score(None)
+print("Best score: {}".format(best_key))
+
+#P4
+multiply_list_map = __import__('4-multiply_list_map').multiply_list_map
+
+my_list = [1, 2, 3, 4, 6]
+new_list = multiply_list_map(my_list, 4)
+print(new_list)
+print(my_list)

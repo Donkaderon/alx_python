@@ -55,7 +55,7 @@ class Square:
 
         """
         if isinstance(value, int):
-            if int(value) >= 0:
+            if value >= 0:
                 self.__size = value
             else:
                 raise ValueError("Size must be >= 0")

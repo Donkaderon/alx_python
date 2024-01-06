@@ -54,7 +54,7 @@ class Square:
             ValueError: If the value is a negative integer.
 
         """
-        if value.isdigit():
+        if isinstance(value, int):
             if value >= 0:
                 self.__size = value
             else:

@@ -1,3 +1,12 @@
+"""
+The square module provides a class to represent a square shape.
+
+Module: square
+
+Classes:
+    Square: Represents a square shape.
+
+"""
 class Square:
     def __init__(self, size):
         """

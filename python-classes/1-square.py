@@ -7,6 +7,7 @@ Classes:
     Square: Represents a square shape.
 
 """
+
 class Square:
     """
     Square class represents a square shape.
@@ -15,7 +16,7 @@ class Square:
         __size (int): Private instance attribute representing the size of the square.
 
     Methods:
-        __init__(self, size=0): Initializes a Square object with a given size.
+        __init__(self, size): Initializes a Square object with a given size.
 
     """
 
@@ -53,12 +54,10 @@ class Square:
             ValueError: If the value is a negative integer.
 
         """
-        if value.isdigit():
-            self.__size = value
-        elif value < 0 :
-            print("Size must be >= 0")
-        else :
-            print ('Size must be an integer')
-            
-        
-    
+        if isinstance(value, int):
+            if value >= 0:
+                self.__size = value
+            else:
+                raise ValueError("Size must be >= 0")
+        else:
+            raise TypeError("Size must be an integer")

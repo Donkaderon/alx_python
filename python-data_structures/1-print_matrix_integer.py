@@ -1,5 +1,3 @@
-
-
 def print_matrix_integer(matrix=[[]]):
     for row in matrix:
         for index, element in enumerate(row):

@@ -5,7 +5,6 @@ This module provides a base class for geometry-related operations.
 
 Classes:
 - BaseGeometry: A base class for geometry operations.
-
 """
 
 class BaseGeometry:
@@ -17,25 +16,8 @@ class BaseGeometry:
 
     Methods:
     - None
-
-    """
-    
-    #def area(self):
     """
 
-        Calculate the area of the geometry.
-
-        This method is intended to be overridden by subclasses to provide
-        the specific implementation for calculating the area of the geometry.
-
-        Raises:
-        - Exception: Indicates that the 'area' method is not implemented.
-
-        Returns:
-        - None
-        """
-       # raise Exception("area() is not implemented")
-    
     def integer_validator(self, name, value):
         self.__value = value
         self.__name = name
@@ -43,10 +25,37 @@ class BaseGeometry:
             raise TypeError(f"{name} must be an integer")
         if value <= 0:
             raise ValueError(f"{name} must be greater than 0")
-        
+
 
 class Rectangle(BaseGeometry):
+    """
+    A class representing a rectangle.
+
+    This class inherits from the BaseGeometry class and provides functionality
+    to create and work with rectangles.
+
+    Attributes:
+    - __width (int): The width of the rectangle.
+    - __height (int): The height of the rectangle.
+
+    Methods:
+    - __init__(width, height): Initializes a new instance of the Rectangle class.
+    - area(): Calculates the area of the rectangle.
+    - __str__(): Returns a string representation of the rectangle.
+    """
+
     def __init__(self, width, height):
+        """
+        Initializes a new instance of the Rectangle class.
+
+        Args:
+        - width (int): The width of the rectangle.
+        - height (int): The height of the rectangle.
+
+        Raises:
+        - TypeError: If either the width or height is not an integer.
+        - ValueError: If either the width or height is less than or equal to 0.
+        """
         self.__width = width
         self.__height = height
 
@@ -57,20 +66,18 @@ class Rectangle(BaseGeometry):
 
     def area(self):
         """
-
-        Calculate the area of the geometry.
-
-        This method is intended to be overridden by subclasses to provide
-        the specific implementation for calculating the area of the geometry.
-
-        Raises:
-        - Exception: Indicates that the 'area' method is not implemented.
+        Calculate the area of the rectangle.
 
         Returns:
-        - None
+        - int: The area of the rectangle.
         """
         return self.__width * self.__height
-        
-    def __str__(self):
-        return f"[Rectangle] {self.__width}/{self.__height}"
 
+    def __str__(self):
+        """
+        Returns a string representation of the rectangle.
+
+        Returns:
+        - str: A string representation of the rectangle.
+        """
+        return f"[Rectangle] {self.__width}/{self.__height}"

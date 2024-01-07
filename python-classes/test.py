@@ -1,3 +1,4 @@
+'''
 class Base():
     """ My base class """
 
@@ -14,3 +15,6 @@ class User(Base):
 for i in range(4):
     u = User()
 print(u.id)
+'''
+
+

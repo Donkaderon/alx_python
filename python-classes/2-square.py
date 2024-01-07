@@ -46,4 +46,6 @@ class Square:
 
         """
         self.area = self.__size * self.__size
-        print("The area of the square is {}".format(self.area))
+        return self.area
+    
+

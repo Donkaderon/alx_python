@@ -24,11 +24,14 @@ class Square:
         Initializes a Square object with a given size.
 
         Args:
-            size (int): The size of the square.
+            size (int, optional): The size of the square. Defaults to 0.
 
         Raises:
             TypeError: If the size is not an integer.
             ValueError: If the size is a negative integer.
+
+        Notes:
+            The size attribute is a private attribute prefixed with double underscores (__).
 
         """
         if not isinstance(size, int):

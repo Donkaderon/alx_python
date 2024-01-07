@@ -19,14 +19,20 @@ class BaseGeometry:
     - None
 
     """
-
+    
     def area(self):
-        if self.area == 0 or self.area is None:
-            raise NotImplementedError("area() is not implemented")
+        """
 
-bg = BaseGeometry()
+        Calculate the area of the geometry.
 
-try:
-    print(bg.area())
-except Exception as e:
-    print("[{}] {}".format(e.__class__.__name__, e))
+        This method is intended to be overridden by subclasses to provide
+        the specific implementation for calculating the area of the geometry.
+
+        Raises:
+        - Exception: Indicates that the 'area' method is not implemented.
+
+        Returns:
+        - None
+        """
+        raise Exception("area() is not implemented")
+    

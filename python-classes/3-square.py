@@ -60,10 +60,3 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = value
         
-my_square = Square(89)
-print(my_square.size)
-print(my_square.area())
-my_square.size = 33
-print(my_square.size)
-print(my_square.area())
-

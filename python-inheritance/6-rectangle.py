@@ -52,3 +52,16 @@ class Rectangle(BaseGeometry):
 
         super().__init__()
 
+        self.integer_validator("width", width)  # Validate width
+        self.integer_validator("height", height)  # Validate height
+
+
+try:
+    r = Rectangle(0, 4)
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))
+
+try:
+    r = Rectangle(3, "3")
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))

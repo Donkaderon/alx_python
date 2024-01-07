@@ -35,8 +35,6 @@ class BaseGeometry:
         - None
         """
         raise Exception("area() is not implemented")
-    
 
-bg = BaseGeometry()
-attributes = [attr for attr in dir(bg) if attr != '__init_subclass__']
+    
     

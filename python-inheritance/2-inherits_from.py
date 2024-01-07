@@ -21,3 +21,9 @@ def inherits_from(obj, a_class):
     - False otherwise.
     """
     return issubclass(type(obj), a_class)
+
+a = 1
+print(inherits_from(a, int))
+
+a = [1, 2, 3]
+print(inherits_from(a, list))

@@ -1,3 +1,12 @@
+"""
+Module: type_comparison
+
+This module provides a function to compare the type of an object with a specified class.
+
+Functions:
+- is_same_class(obj, a_class): Check if an object belongs to a specified class.
+
+"""
 def is_same_class(obj, a_class):
     """
     Check if an object belongs to a specified class.
@@ -11,3 +20,4 @@ def is_same_class(obj, a_class):
     - False otherwise.
     """
     return type(obj) == a_class
+

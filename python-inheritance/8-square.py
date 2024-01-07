@@ -103,8 +103,3 @@ class Square(Rectangle):
     
     def __str__(self):
         return f"[Rectangle] {self.__size}/{self.__size}"
-    
-try:
-    s = Square("13")
-except Exception as e:
-    print("[{}] {}".format(e.__class__.__name__, e))

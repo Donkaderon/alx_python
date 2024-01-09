@@ -148,6 +148,18 @@ class Rectangle(Base):
         return self.__height * self.__width
     
     def display(self):
+        """
+        Displays the rectangle by printing a representation of its shape using '#' symbols.
+
+        The display is achieved by iterating over the height and width of the rectangle and printing '#' symbols.
+        Each '#' symbol represents a pixel of the rectangle. The width represents the number of pixels in a row,
+        and the height represents the number of rows. The '#' symbols are printed row by row, with each row
+        separated by a newline character.
+
+        For example, a rectangle with width 3 and height 2 would be displayed as:
+        ###
+        ###
+        """
         for _ in range(self.__height):
             for _ in range(self.__width):
                 print('#', end='')

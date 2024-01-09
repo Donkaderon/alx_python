@@ -165,3 +165,15 @@ class Rectangle(Base):
                 print('#', end='')
             print()
 
+    def __str__(self):
+        """
+        Returns a string representation of the rectangle.
+
+        The string representation includes information about the rectangle's id, width, height, x-coordinate, and y-coordinate.
+
+        Returns:
+         - A string representation of the rectangle.
+        """
+        return f"([Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height})"
+    
+

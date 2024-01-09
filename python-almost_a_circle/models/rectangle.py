@@ -58,7 +58,7 @@ class Rectangle(Base):
         """
         Returns the width of the rectangle.
         """
-        return self.__width
+        return Rectangle.__width
 
     def set_width(self, width):
         """

@@ -146,3 +146,10 @@ class Rectangle(Base):
          - The area value of the rectangle instance.
         """
         return self.__height * self.__width
+    
+    def display(self):
+        for _ in range(self.__height):
+            for _ in range(self.__width):
+                print('#', end='')
+            print()
+

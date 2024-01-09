@@ -49,75 +49,75 @@ class Rectangle(Base):
         If id is not provided, the rectangle is assigned a unique identifier based on the number of objects created.
         """
         super().__init__(id)
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
 
     @property
     def width(self):
         """
-    Returns the width of the rectangle.
-    """
-        return self._width
+        Returns the width of the rectangle.
+        """
+        return self.__width
 
     @width.setter
     def width(self, width):
-    """
-    Sets the width of the rectangle.
+        """
+        Sets the width of the rectangle.
 
-    Parameters:
-     - width: The new width value for the rectangle.
-    """
-    self._width = width
+        Parameters:
+         - width: The new width value for the rectangle.
+        """
+        self.__width = width
 
     @property
     def height(self):
         """
-    Returns the height of the rectangle.
-    """
-        return self._height
+        Returns the height of the rectangle.
+        """
+        return self.__height
 
     @height.setter
     def height(self, height):
         """
-    Sets the height of the rectangle.
+        Sets the height of the rectangle.
 
-    Parameters:
-     - height: The new height value for the rectangle.
-    """
-        self._height = height
+        Parameters:
+         - height: The new height value for the rectangle.
+        """
+        self.__height = height
 
     @property
     def x(self):
         """
-    Returns the x-coordinate of the rectangle's position.
-    """
-        return self._x
+        Returns the x-coordinate of the rectangle's position.
+        """
+        return self.__x
 
     @x.setter
     def x(self, x):
         """
-    Sets the x-coordinate of the rectangle's position.
+        Sets the x-coordinate of the rectangle's position.
 
-    Parameters:
-     - x: The new x-coordinate value for the rectangle's position.
-    """
-        self._x = x
+        Parameters:
+         - x: The new x-coordinate value for the rectangle's position.
+        """
+        self.__x = x
 
     @property
     def y(self):
         """
-    Returns the y-coordinate of the rectangle's position.
-    """
-        return self._y
+        Returns the y-coordinate of the rectangle's position.
+        """
+        return self.__y
 
     @y.setter
     def y(self, y):
         """
-    Sets the y-coordinate of the rectangle's position.
+        Sets the y-coordinate of the rectangle's position.
 
-    Parameters:
-     - y: The new y-coordinate value for the rectangle's position.
-    """
-        self._y = y
+        Parameters:
+         - y: The new y-coordinate value for the rectangle's position.
+        """
+        self.__y = y

@@ -67,7 +67,7 @@ class Rectangle(Base):
         Parameters:
          - width: The new width value for the rectangle.
         """
-        self.__width = width
+        _Rectangle__width = width
 
     def get_height(self):
         """
@@ -113,3 +113,4 @@ class Rectangle(Base):
          - y: The new y-coordinate value for the rectangle's position.
         """
         self.__y = y
+

@@ -54,15 +54,15 @@ class Rectangle(Base):
         self.__x = x
         self.__y = y
 
-@property
-def width(self):
-    """
+    @property
+    def width(self):
+        """
     Returns the width of the rectangle.
     """
-    return self._width
+        return self._width
 
-@width.setter
-def width(self, width):
+    @width.setter
+    def width(self, width):
     """
     Sets the width of the rectangle.
 
@@ -71,53 +71,53 @@ def width(self, width):
     """
     self._width = width
 
-@property
-def height(self):
-    """
+    @property
+    def height(self):
+        """
     Returns the height of the rectangle.
     """
-    return self._height
+        return self._height
 
-@height.setter
-def height(self, height):
-    """
+    @height.setter
+    def height(self, height):
+        """
     Sets the height of the rectangle.
 
     Parameters:
      - height: The new height value for the rectangle.
     """
-    self._height = height
+        self._height = height
 
-@property
-def x(self):
-    """
+    @property
+    def x(self):
+        """
     Returns the x-coordinate of the rectangle's position.
     """
-    return self._x
+        return self._x
 
-@x.setter
-def x(self, x):
-    """
+    @x.setter
+    def x(self, x):
+        """
     Sets the x-coordinate of the rectangle's position.
 
     Parameters:
      - x: The new x-coordinate value for the rectangle's position.
     """
-    self._x = x
+        self._x = x
 
-@property
-def y(self):
-    """
+    @property
+    def y(self):
+        """
     Returns the y-coordinate of the rectangle's position.
     """
-    return self._y
+        return self._y
 
-@y.setter
-def y(self, y):
-    """
+    @y.setter
+    def y(self, y):
+        """
     Sets the y-coordinate of the rectangle's position.
 
     Parameters:
      - y: The new y-coordinate value for the rectangle's position.
     """
-    self._y = y
+        self._y = y

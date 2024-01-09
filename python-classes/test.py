@@ -17,4 +17,11 @@ for i in range(4):
 print(u.id)
 '''
 
+def test_args_kwargs(arg1, arg2, arg3):
+    print ("arg1:", arg1)
+    print ("arg2:", arg2)
+    print ("arg3:", arg3)
+
+arg = (4,8,9)
+test_args_kwargs(*arg)
 

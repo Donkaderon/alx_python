@@ -1,3 +1,6 @@
+"""
+The Base module provides a class for creating objects with unique identifiers.
+"""
 class Base: 
     """
     The Base class represents a blueprint for creating objects with unique identifiers.

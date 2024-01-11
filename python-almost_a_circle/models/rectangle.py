@@ -187,5 +187,8 @@ class Rectangle(Base):
 
           
 
-    
+ 
+
+r = Rectangle(5, 4, 4, 3)
+r.display()
 

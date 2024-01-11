@@ -165,7 +165,7 @@ class Rectangle(Base):
         $##
         """
         for _ in range(self.__y):
-            print('$')
+            print(' ')
 
         for _ in range(self.__height):
             for _ in range(self.__x):
@@ -185,7 +185,7 @@ class Rectangle(Base):
         """
         return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}"
 
-                
+          
 
     
 

@@ -165,7 +165,7 @@ class Rectangle(Base):
         $##
         """
         for _ in range(self.__y):
-            print(' ')
+            print('')
 
         for _ in range(self.__height):
             for _ in range(self.__x):
@@ -184,11 +184,4 @@ class Rectangle(Base):
          - A string representation of the rectangle.
         """
         return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}"
-
-          
-
- 
-
-r = Rectangle(5, 4, 4, 3)
-r.display()
 

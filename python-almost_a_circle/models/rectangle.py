@@ -186,6 +186,32 @@ class Rectangle(Base):
         return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}"
 
     def update(self, *args):
+        """
+    Updates the attributes of the object with the provided values.
+
+    The `update` method accepts a variable number of arguments (`*args`), which can be used to update
+    the attributes of the object. The arguments should be provided in the order corresponding to the
+    attributes that need to be updated.
+
+    Parameters:
+        *args: Variable number of arguments representing the values to update the object's attributes.
+
+    Usage:
+        # Create an object
+        obj = MyClass()
+
+        # Update attributes using the update method
+        obj.update(arg1, arg2, ...)
+
+    Example:
+        # Create a rectangle object
+        rectangle = Rectangle(5, 3)
+
+        # Update the rectangle's attributes using the update method
+        rectangle.update(8, 6)
+
+        # Now the rectangle's width is 8 and height is 6
+    """
         self.id = args[0]
         self.__width = args[1]
         self.__height = args[2]

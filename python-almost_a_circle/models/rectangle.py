@@ -156,11 +156,20 @@ class Rectangle(Base):
         and the height represents the number of rows. The '#' symbols are printed row by row, with each row
         separated by a newline character.
 
-        For example, a rectangle with width 3 and height 2 would be displayed as:
-        ###
-        ###
+        The method also takes into account the x and y coordinates of the rectangle's position. It prints empty lines
+        before the rectangle's top-left corner based on the value of x, and it prints '$' symbols before the rectangle's
+        left side based on the value of y.
+
+        For example, a rectangle with width 3, height 2, x 2, and y 1 would be displayed as:
+        $##
+        $##
         """
+        for _ in range(self.__y):
+            print('$')
+
         for _ in range(self.__height):
+            for _ in range(self.__x):
+                print(' ', end='')
             for _ in range(self.__width):
                 print('#', end='')
             print()
@@ -175,5 +184,8 @@ class Rectangle(Base):
          - A string representation of the rectangle.
         """
         return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}"
+
+                
+
     
 

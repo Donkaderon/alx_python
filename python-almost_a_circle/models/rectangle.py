@@ -35,7 +35,7 @@ class Rectangle(Base):
     The Rectangle class represents a rectangle object that inherits from the Base class.
     """
 
-    def __init__(self, width = 0, height = 0, x=0, y=0, id=None):
+    def __init__(self, width, height, x=0, y=0, id=None):
         """
         Initializes a new instance of the Rectangle class.
 
@@ -216,30 +216,55 @@ class Rectangle(Base):
             self.id = args[0]
 
             if len(args) >= 2:
-                self.width = args[1]
+                self.__width = args[1]
 
             if len(args) >= 3:
-                self.height = args[2]
+                self.__height = args[2]
 
             if len(args) >= 4:
-                self.x = args[3]
+                self.__x = args[3]
 
             if len(args) >= 5:
-                self.y = args[4]
-
-        for key, value in kwargs.items():
-            if key == 'id':
-                self.id = value
-            elif key == 'width':
-                self.width = value
-            elif key == 'height':
-                self.height = value
-            elif key == 'x':
-                self.x = value
-            elif key == 'y':
-                self.y = value
-            else:
-                raise ValueError("Invalid attribute name: {}".format(key))
-         
-
+                self.__y = args[4]
         
+        for key, value in kwargs.items():
+            if key == 'id' in kwargs:
+                self.id = value
+            if key =='width' in kwargs:
+                self.__width = value
+            if key == 'height' in kwargs:
+                self.__height = value
+            if key =='x' in kwargs:
+                self.__x = value
+            if key =='y' in kwargs:
+                self.__y = value
+
+
+
+
+
+
+r = Rectangle(10, 12)
+if r.y != 0:
+    print("y must be equal to 0: {}".format(r.y))
+    exit(1)
+
+r.update(width=4)
+    
+if r.width != 4:
+    print("width must be updated to 4: {}".format(r.width))
+    exit(1)
+    
+if r.height != 12:
+    print("height must stay to 12: {}".format(r.height))
+    exit(1)
+
+if r.x != 0:
+    print("x must stay to 0: {}".format(r.x))
+    exit(1)
+
+if r.y != 0:
+    print("y must stay to 0: {}".format(r.y))
+    exit(1)
+    
+print("OK", end="")

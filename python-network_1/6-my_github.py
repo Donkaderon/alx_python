@@ -23,5 +23,7 @@ if __name__ == "__main__":
         user_id = get_user_id(username, password)
         if user_id:
             print(user_id)
+        else: 
+            print("None")
     else:
         print("Please provide both username and password as command-line arguments.")

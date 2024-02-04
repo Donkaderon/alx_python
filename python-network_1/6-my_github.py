@@ -21,7 +21,7 @@ if __name__ == "__main__":
         username = sys.argv[1]
         password = sys.argv[2]
         user_id = get_user_id(username, password)
-        if user_id:
+        if user_id is not None:
             print(user_id)
         else: 
             print("None")

@@ -22,6 +22,6 @@ if __name__ == "__main__":
         password = sys.argv[2]
         user_id = get_user_id(username, password)
         if user_id:
-            print(f"User ID: {user_id}")
+            print(user_id)
     else:
         print("Please provide both username and password as command-line arguments.")

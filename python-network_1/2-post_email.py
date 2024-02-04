@@ -1,7 +1,7 @@
 # Provides functions for making HTTP requests.
-import sys
-# Provides access to system-specific parameters and functions.
 import requests
+# Provides access to system-specific parameters and functions.
+import sys
 
 def send_post_request(url, email):
     """
